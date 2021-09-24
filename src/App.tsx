@@ -4,7 +4,9 @@ import { Counter } from "./Counter";
 import {Reducer} from'./Reducer';
 import TodoTask from "./TodoTask/ToDoTask";
 import { myTask } from "./TodoTask/Interface";
+import Apps from './getuser/Apps';
 import './App.css';
+
 
 const App:FC=()=> {
 
@@ -72,6 +74,7 @@ const App:FC=()=> {
           return <TodoTask key={key} task={task} completeTask={completeTask} />;
         })}
       </div>
+    <Apps/>
     </div>
     </div>
   );
